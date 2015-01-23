@@ -19,8 +19,8 @@
 
 local settings = {};
 settings.localurl = GetSetting("localurl");
+settings.StartwithISxN = GetSetting("StartwithISxN");
 settings.autoSearch = GetSetting("AutoSearch");
-settings.Popup = GetSetting("Popup");
 settings.AddonRibbonName = GetSetting("AddonRibbonName");
 local interfaceMngr = nil;
 local ExLibrisForm = {};
