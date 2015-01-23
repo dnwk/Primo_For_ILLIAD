@@ -13,7 +13,7 @@
     <Setting name="AutoSearch" value="true" type="boolean">
       <Description>Determines whether or not the search should be done automatically when the request is opened.</Description>
     </Setting>
-    <Setting name="StartwithISxN" value="false" type="boolean">
+    <Setting name="StartwithISxN" value="true" type="boolean">
 	  <Description>Determines whether or not the Addon should start the search with item ISxN.</Description>
 	</Setting>
 	<Setting name="localurl" value="http://alliance-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=WHITC_ILLIAD" type="string">
