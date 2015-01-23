@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ExLibris_Alma_Primo</Name>
+  <Author>IDS Project</Author>
+  <Version>1.1</Version>
+  <Active>true</Active>
+  <Type>Addon</Type>
+  <Description>Searches ExLibris Alma/Primo Catalog for ISSN or Title for loans and articles and allows for input of Call Number and Location for Loans into the Details tab of the request.</Description>
+  <Forms>
+    <Form>FormRequest</Form>
+  </Forms>
+  <Settings>
+    <Setting name="AutoSearch" value="true" type="boolean">
+      <Description>Determines whether or not the search should be done automatically when the request is opened.</Description>
+    </Setting>
+    <Setting name="StartwithISxN" value="false" type="boolean">
+	  <Description>Determines whether or not the Addon should start the search with item ISxN.</Description>
+	</Setting>
+	<Setting name="Popup" value="false" type="boolean">
+	  <Description>Determines whether or not you would like confirmation messages for location and call number input into the request form.</Description>
+	</Setting>	
+	<Setting name="localurl" value="http://alliance-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=WHITC_ILLIAD" type="string">
+	  <Description>Enter in your shortened URL for your catalog (e.g. http://search.library.northwestern.edu/).  Include the colon and port number if part of the string.</Description>
+	</Setting>
+	<Setting name="AddonRibbonName" value="Alma" type="string">
+	  <Description>Enter the name that you would like to appear for the tab associated with this Addon (example: Alma) (example:Primo)</Description>
+	</Setting>
+  </Settings>
+  <Files>
+    <File>ExLibris_Alma_Primo.lua</File>
+  </Files>
+</Configuration>
